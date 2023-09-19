@@ -1,0 +1,33 @@
+  #Клока включена/выключена true|false
+  shop: mega
+  cl: false
+  #id счетчика Яндекс-метрики
+  ymid:
+  #Версия Bootstrap
+  bootstrap: 5
+  #Мета-тег верификации Яндекс Вебмастер
+  ya_verif: ''
+  #Дата публикации 
+  date_published: 2023-08-30
+  #Язык сайта
+  lang: en
+  #Имя для ld-json разметки
+  name: 
+  #Доменное имя без http|https (!!!!!ТОЛЬКО ДОМЕН, БЕЗ УКАЗАНИЯ ПОДДОМЕНА!!!!!)
+  domain: kraken-site-dark.net
+  #URL сайта (ВАЖНО!!! Этот же url !!!ОБЯЗАТЕЛЬНО!!! необходимо указать в файле _config.yml в корне проекта, иначе sitmap.xml будет сформирован неправильно!) 
+  #с http|https (если сайт на поддомене, указываем поддомен)
+  url: https://kraken-site-dark.net
+  #Путь к файлу логотипа, для соцсетей
+  #logo: /assets/images/ava.webp
+  #Путь к Favicon
+  favicon: /assets/favicon/
+  #css стили для подгружаемого переходника
+  prelend_css: /../assets/prelend/css/
+  prelend_js: /../assets/prelend/js/
+  prelend_images: /../assets/prelend/images/
+  main_css: /assets/main/css/
+  main_js: /assets/main/js/
+  main_images: /assets/main/images/
+  #Код скрипта клоаки Adspect.ai (используеться метоод js-redirect в Adspect)
+  cl_data: 

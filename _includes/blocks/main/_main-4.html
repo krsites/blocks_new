@@ -1,0 +1,18 @@
+<section class="py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-5 bottom-four">{{ page.main.title }}</h2>
+        <div>
+            {% picture jpt-webp {{ image_paths | sample }} 1:2 jpt-mobile: {{
+                image_paths | sample }} --img class="pic-four shadow-four" width="500" height="400"
+                --alt {{ alt.keyword | sample }} %}
+    <h3>{{ page.main.part_1.subtitle }}</h3>
+        <p class="aboutus-text-four">{{ page.main.part_1.article }}</p>
+
+  <h3>{{ page.main.part_2.subtitle }}</h3>
+  <p class="aboutus-text-four">{{ page.main.part_2.article }}</p>
+  <h3>{{ page.main.part_3.subtitle }}</h3>
+  <p class="aboutus-text-four">{{ page.main.part_2.article }}</p>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,13 @@
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">{{ page.main.title }}</h2>
+        <div>{% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid d-block mx-lg-auto" width="650" height="450" loading="lazy" --alt {{ alt.keyword | sample }} %}</div>
+        <br>
+        <h3>{{ page.main.part_1.subtitle }}</h3>
+        <p class="lead">{{ page.main.part_1.article }}</p>
+        <h3>{{ page.main.part_2.subtitle }}</h3>
+        <p class="lead">{{ page.main.part_2.article }}</p>
+        <h3>{{ page.main.part_3.subtitle }}</h3>
+        <p class="lead">{{ page.main.part_3.article }}</p>
+    </div>
+</section>

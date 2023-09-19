@@ -1,0 +1,32 @@
+<section class="bg-light pb-5 pt-5 text-center text-lg-start">
+  <div class="container pb-4 pt-4">
+    <h2 class="text-center mb-5">{{ page.faq.title }}</h2>
+    <div class="align-items-center row">
+      <div class="col-lg-6 p-5 text-center">
+        <div>
+          {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{image_paths | sample }} 1:1 --img class="img-fluid d-block mx-lg-auto" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+        </div>
+      </div>
+      <div class="col-lg-6 pb-3 pt-3">
+        <div class="pb-3 pt-3">
+          <h3 class="fw-bold h5">{{ page.faq.item_1.q }}</h3>
+          <p class="fw-light mb-0">
+            {{ page.faq.item_1.a }}
+          </p>
+        </div>
+        <div class="pb-3 pt-3">
+          <h3 class="fw-bold h5">{{ page.faq.item_2.q }}</h3>
+          <p class="fw-light mb-0">
+            {{ page.faq.item_2.a }}
+          </p>
+        </div>
+        <div class="pb-3 pt-3">
+          <h3 class="fw-bold h5">{{ page.faq.item_3.q }}</h3>
+          <p class="fw-light mb-0">
+            {{ page.faq.item_3.a }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

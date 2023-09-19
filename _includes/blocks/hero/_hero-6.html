@@ -1,0 +1,17 @@
+<section class="bg-light pt-5 text-secondary">
+    <div class="container">
+        <div class="align-items-center row">
+            <div class="col-lg-6 mb-5">
+                <p class="h6 text-primary text-uppercase">{{ page.hero.subtitle }}</p>
+                <h1 class="display-4 fw-bold mb-3 text-dark">{{ page.hero.title }}</h1>
+                <div class="fw-light lead mb-4">{{ page.hero.article }}</div>
+                <a href="/" class="btn btn-primary">{{ alt.keyword | sample }}</a>
+            </div>
+            <div class="col-lg-6">
+                <div class=" bg-white mb-n5 p-3 shadow" style="position: relative;">
+                    <{% picture jpt-webp: {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid d-block mx-lg-auto" width="600" height="600" --alt {{ alt.keyword | sample }} %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

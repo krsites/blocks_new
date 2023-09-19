@@ -1,0 +1,18 @@
+<footer class=" py-3 footer-three">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p><strong>2023 {{ alt.keyword | sample }}</strong> <br> All right reserved &copy; </p>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li class=""><a href="#">Cookie Policy</a></li>
+            <li class=""><a href="#">Privacy Policy</a></li><br>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          {% picture jpt-webp /assets/blocks/images/logo/{{ page.shop }}/logo-{{ site.data.layout.logo }}.webp --img class="logo-one" height="80" --alt {{ alt.keyword | sample }} %}
+        </div>
+      </div>
+    </div>
+  </footer>

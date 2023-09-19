@@ -1,0 +1,40 @@
+<section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">{{ page.feedback.title }}</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="userhead-two">
+                {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid mb-3 avatar-two" width="200" height="200" --alt {{ alt.keyword | sample }} %}
+                <h3 class="card-title">{{ page.feedback.item_1.nikname }}</h3>
+              </div>
+              <p class="card-text">{{ page.feedback.item_1.text }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="userhead-two">
+                {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid mb-3 avatar-two" width="200" height="200" --alt {{ alt.keyword | sample }} %}
+                <h3 class="card-title">{{ page.feedback.item_2.nikname }}</h3>
+              </div>
+              <p class="card-text">{{ page.feedback.item_2.text }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="userhead-two">
+                {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid mb-3 avatar-two" width="200" height="200" --alt {{ alt.keyword | sample }} %}
+                <h3 class="card-title">{{ page.feedback.item_3.nikname }}</h3>
+              </div>
+              <p class="card-text">{{ page.feedback.item_3.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

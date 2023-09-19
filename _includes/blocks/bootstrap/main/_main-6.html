@@ -1,0 +1,44 @@
+<section class="bg-light pb-5 pt-5 text-center text-lg-start" data-pg-collapsed>
+  <div class="container pb-4 pt-4">
+    <h2 class="text-center">{{ page.main.title }}</h2>
+    <div class="align-items-center row">
+      <div class="col-lg-6 pb-3 pt-3">
+        {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid d-block mx-lg-auto" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+      </div>
+      <div class="col-lg-6 pb-3 pt-3">
+        <div class="pb-3 pt-3">
+          <h3 class="fw-bold h5">{{ page.main.part_1.subtitle }}</h3>
+          <p class="fw-light mb-0">
+            {{ page.main.part_1.article }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="align-items-center row">
+      <div class="col-lg-6 order-lg-2 pb-3 pt-3">
+        {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid d-block mx-lg-auto" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+      </div>
+      <div class="col-lg-6 order-lg-1 pb-3 pt-3">
+        <div class="pb-3 pt-3">
+          <h3 class="fw-bold h5">{{ page.main.part_2.subtitle }}</h3>
+          <p class="fw-light mb-0">
+            {{ page.main.part_2.article }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="align-items-center row">
+      <div class="col-lg-6 pb-3 pt-3">
+        {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid d-block mx-lg-auto" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+      </div>
+      <div class="col-lg-6 pb-3 pt-3">
+        <div class="pb-3 pt-3">
+          <h3 class="fw-bold h5">{{ page.main.part_3.subtitle }}</h3>
+          <p class="fw-light mb-0">
+            {{ page.main.part_3.article }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

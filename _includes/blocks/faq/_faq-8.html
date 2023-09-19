@@ -1,0 +1,31 @@
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="display-4 fw-bold text-primary text-center mb-5">{{ page.faq.title }}</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card border-info shadow">
+          <div class="card-body">
+            <h3 class="card-title text-info"><i class="bi bi-question-circle-fill me-2"></i>{{ page.faq.item_1.q }}</h3>
+            <p class="card-text">{{ page.faq.item_1.a }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success shadow">
+          <div class="card-body">
+            <h3 class="card-title text-success"><i class="bi bi-question-circle-fill me-2"></i>{{ page.faq.item_2.q }}</h3>
+            <p class="card-text">{{ page.faq.item_2.a }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-warning shadow">
+          <div class="card-body">
+            <h3 class="card-title text-warning"><i class="bi bi-question-circle-fill me-2"></i>{{ page.faq.item_3.q }}</h3>
+            <p class="card-text">{{ page.faq.item_3.a }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

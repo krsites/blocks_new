@@ -1,0 +1,142 @@
+{% include _head.html %}
+
+<body>
+    {{ cl }}
+    <header id="header">
+        <div class="container-fluid">
+            <div class="logo">
+                <nav class="navbar navbar-light navbar-expand-md py-3">
+                    <div class="container"><a class="navbar-brand d-flex align-items-center" href="#" style="background: var(--bs-white);--bs-body-bg: var(--bs-navbar-toggler-border-color);"><img src="assets/img/1-4-700x200.webp" alt="{{ alt.keyword | sample }}"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-2" style="background: var(--bs-white);"><a href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a><a href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a><a href="{{ site.data.links.link | sample }}"><br><strong><span style="color: rgb(136, 73, 34);">{{ alt.keyword | sample }}</span></strong><br><br></a><a href="{{ site.data.links.link | sample }}" style="display: flex;"><br><strong><span style="color: rgb(136, 73, 34);">{{ alt.keyword | sample }}</span></strong><br><br></a>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"></li>
+                                <li class="nav-item"></li>
+                                <li class="nav-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active"><a href="{{ site.data.links.link | sample }}" class="scrollto">{{ alt.keyword | sample }}</a></li>
+                    <li><a href="{{ site.data.links.link | sample }}" class="scrollto">{{ alt.keyword | sample }}</a></li>
+                    <li><a href="{{ site.data.links.link | sample }}" class="scrollto">{{ alt.keyword | sample }}</a></li>
+                    <li><a href="{{ site.data.links.link | sample }}" class="scrollto">{{ alt.keyword | sample }}</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <h1>{{ page.intro.title }}</h1>
+
+                    <div class="col-lg-6"><img class="img-fluid" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}"></div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        {{ page.intro.article }}                      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why-us section-bg">
+            <h2 class="card-title">{{ page.future.title }}</h2> <br><br>
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card"><img class="card-img-top w-100 d-block card-img-top" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}">
+                            <div class="card-icon"><i class="bx bx-book-reader"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="">{{ page.future.item_1.title }}</a></h3>
+                                <p class="card-text">{{ page.future.item_1.article }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card"><img class="card-img-top w-100 d-block card-img-top" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}">
+                            <div class="card-icon"><i class="bx bx-calendar-edit"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="">{{ page.future.item_2.title }}</a></h3>
+                                <p class="card-text">{{ page.future.item_2.article }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card"><img class="card-img-top w-100 d-block card-img-top" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}">
+                            <div class="card-icon"><i class="bx bx-calendar-edit"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="">{{ page.future.item_3.title }}</a></h3>
+                                <p class="card-text">{{ page.future.item_3.article }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>{{ page.faq.title }}</h2>
+                </div>
+                <ul class="faq-list">
+                    <li><a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">{{ page.faq.item_1.q }} <i class="bx bx-down-arrow-alt icon-show"></i><i class="icon-close bx bx-x"></i></a>
+                        <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                            <p> {{ page.faq.item_1.a }}</p>
+                        </div>
+                    </li>
+                    <li><a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">{{ page.faq.item_2.q }} <i class="bx bx-down-arrow-alt icon-show"></i><i class="icon-close bx bx-x"></i></a>
+                        <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                            <p> {{ page.faq.item_2.a }}</p>
+                        </div>
+                    </li>
+                    <li><a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">{{ page.faq.item_3.q }}<i class="bx bx-down-arrow-alt icon-show"></i><i class="icon-close bx bx-x"></i></a>
+                        <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                            <p> {{ page.faq.item_3.a }}</p>
+                        </div>
+                    </li>                     
+                </ul>
+            </div>
+        </section>
+        <section id="why-us" class="why-us section-bg">
+            <h3 class="card-title">{{ page.main.title }}</h3> <br><br>
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card"><img class="card-img-top w-100 d-block card-img-top" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}">
+                            <div class="card-icon"><i class="bx bx-book-reader"></i></div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="">{{ page.main.item_1.title }}</a></h4>
+                                <p class="card-text">{{ page.main.item_1.article }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card"><img class="card-img-top w-100 d-block card-img-top" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}">
+                            <div class="card-icon"><i class="bx bx-book-reader"></i></div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="">{{ page.main.item_2.title }}</a></h4>
+                                <p class="card-text">{{ page.main.item_2.article }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card"><img class="card-img-top w-100 d-block card-img-top" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}">
+                            <div class="card-icon"><i class="bx bx-calendar-edit"></i></div>
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="">{{ page.main.item_3.title }}</a></h4>
+                                <p class="card-text">{{ page.main.item_3.article }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include _footer.html %}
+</body>
+
+</html>

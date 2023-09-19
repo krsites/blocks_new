@@ -1,0 +1,1 @@
+var i,acc=document.getElementsByClassName("faq");for(i=0;i<acc.length;i++)acc[i].addEventListener("click",(function(){this.classList.toggle("on");var e=this.nextElementSibling;e.style.maxHeight?e.style.maxHeight=null:e.style.maxHeight=e.scrollHeight+"px"}));

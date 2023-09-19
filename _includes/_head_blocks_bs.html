@@ -1,0 +1,123 @@
+{% if site.data.config.lang == "en" %}
+{% assign alternate = "ru." %}
+{% assign hreflang = "ru" %}
+{% assign alt = site.data.bs_keywords_en %}
+{% elsif site.data.config.lang == "ru" %}
+{% assign hreflang = "en" %}
+{% assign alt = site.data.bs_keywords_ru %}
+{% endif %}
+
+{% assign image_files = site.static_files | where: \"page.shop\", true %}
+
+{% assign image_paths = image_files | map: "path" %}
+{% assign image = image_paths | sample %}
+
+{% if site.data.config.cl == true %}
+{% assign cl = site.data.config.cl_data %}
+{% endif %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="website: https://schema.org/" lang="{{ site.data.config.lang }}">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">   
+        {{ }}     
+{{/*  Yandex.Metrika counter  */}}
+<script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym({{ site.data.config.ymid }}, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+{{/*  Yandex.Metrika counter  */}}
+
+{% include {{page.layout}}/_head.html %}
+
+        <title>{{ page.site_title }}</title>
+        <meta name="keywords" content="{{page.site_keywords }}" >
+        <meta name="description" content="{{ page.site_description }}">
+        <meta name="copyright" lang="{{ site.data.config.lang }}" content="MEGA DARKNET" >
+        <link rel="canonical" href="{{ site.data.config.url }}" >
+        <link rel='alternate' hreflang='{{ hreflang }}' href='https://{{ alternate }}{{ site.data.config.domain }}' >
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ site.data.config.favicon }}{{ page.shop }}/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ site.data.config.favicon }}{{ page.shop }}/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ site.data.config.favicon }}{{ page.shop }}/favicon-16x16.png">
+        <link rel="manifest" href="{{ site.data.config.favicon }}{{ page.shop }}/site.webmanifest">
+        <link rel="mask-icon" href="{{ site.data.config.favicon }}{{ page.shop }}/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="{{ site.data.config.favicon }}{{ page.shop }}/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="{{ site.data.config.favicon }}{{ page.shop }}/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!-- <link type="image/x-icon" href="{{ site.data.config.favicon }}" rel="shortcut icon">
+        <link type="Image/x-icon" href="{{ site.data.config.favicon }}" rel="icon"> -->
+        
+        <meta property="og:locale" content="{{ site.data.config.lang }}" >
+        <meta property="og:type" content="website" >
+        <meta property="og:title" content="{{ page.site_title }}" >
+        <meta property="og:description" content="{{ page.site_description }}" >
+        <meta property="og:url" content="{{ site.data.config.url }}" >
+        <meta property="og:site_name" content="{{ page.site_title }}" >
+        <meta property="website:modified_time" content="{{ 'now' | date: '%Y-%m-%dT%H:%M:%S%z' }}" >
+        <meta property="og:image" content="/assets/blocks/images/sociallogo/{{ page.shop }}/sociallogo.jpg" >
+        <meta property="og:image:width" content="754" >
+        <meta property="og:image:height" content="686" >
+        <meta property="og:image:type" content="image/jpg" >
+        <meta name="twitter:site" content="{{ site.data.config.url }}" >
+        <meta name="twitter:title" content="{{ page.site_title }}" >
+        <meta name="twitter:description" content="{{ page.site_description }}" >
+        <meta name="twitter:card" content="summary_large_image" >
+        <meta name="twitter:label1" content="Est. reading time" >
+        <meta name="twitter:data1" content="5 minutes" >        
+
+
+        <script type="application/ld+json" id="ld-json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "name": "{{ site.data.config.name }}",
+                        "url": "{{ site.data.config.url }}",
+                        "logo": "{{ site.data.config.logo }}"
+                    },
+                    {
+                        "@type": "Article",
+                        "headline": "{{ page.site_title }}",
+                        "image": "{{ site.data.config.logo }}",
+                        "description": "{{ page.site_description }}",
+                        "author": "{{ site.data.config.name }}",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "{{ site.data.config.name }}",
+                            "url": "{{ site.data.config.url }}",
+                            "logo": "/assets/blocks/images/sociallogo/{{ page.shop }}/sociallogo.jpg",
+                                "@type": "ImageObject",
+                                "url": "{{ site.data.config.logo }}"
+                            }
+                        },
+                        "datePublished": "{{ site.data.config.date_published | date: '%Y-%m-%d' }}",
+                        "dateModified": "{{ 'now' | date: '%Y-%m-%d' }}",
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "{{ site.data.config.url }}"
+                        }
+                    }
+                ]
+            }
+            </script>
+            
+    
+    </head> 
+    <body>
+        <noscript><div><img src="https://mc.yandex.ru/watch/{{site.data.config.ymid}}" style="position:absolute; left:-9999px;" alt="{{ alt.keyword | sample }}" /></div></noscript>
+        {{ cl }}

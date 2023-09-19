@@ -1,0 +1,43 @@
+<section class="position-relative py-20 bg-white overflow-hidden" style="background-image: url('flex-assets/elements/pattern-light.png')">
+      <div class="position-absolute top-0 start-0 h-100 w-100" style="background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);"></div>
+      <div class="position-relative container" style="z-index:1;">
+        <div class="row align-items-xl-center g-16">
+          <div class="col-12 col-md-6">
+            <div class="row justify-content-center justify-content-md-start">
+              <div class="col-auto">
+                <div class="position-relative">
+                  {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid pb-5" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+                  <!-- <img class="w-100" src="flex-assets/images/how-it-works/ideas.png" alt=""> -->
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mw-md-xl">
+              
+              <h2 class="font-heading mb-12 fs-5" style="letter-spacing: -1px;">{{ page.future.item_1.title }}</h2>
+              <div class="row g-8">
+                <div class="col-12 col-md-6">
+                  <div class="mb-4 d-flex justify-content-center align-items-center fs-9 text-white fw-semibold bg-success rounded-pill" style="width: 48px; height: 48px;">1</div>
+                  <h3 class="mb-2 font-heading fs-9">{{ page.future.item_1.subtitle }}</h3>
+                  <p class="mb-0 text-secondary fw-medium">{{ page.future.item_1.article }}</p>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="mb-4 d-flex justify-content-center align-items-center fs-9 text-white fw-semibold bg-success rounded-pill" style="width: 48px; height: 48px;">2</div>
+                  <h3 class="mb-2 font-heading fs-9">{{ page.future.item_2.subtitle }}</h3>
+                  <p class="mb-0 text-secondary fw-medium">{{ page.future.item_2.article }}</p>
+                </div>
+                <div class="col-12">
+                  <div class="mb-4 d-flex justify-content-center align-items-center fs-9 text-white fw-semibold bg-success rounded-pill" style="width: 48px; height: 48px;">3</div>
+                  <h3 class="mb-2 font-heading fs-9"{{ page.future.item_3.subtitle }}</h3>
+                  <p class="mb-0 text-secondary fw-medium">{{ page.future.item_3.article }}</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>

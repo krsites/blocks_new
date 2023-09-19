@@ -1,0 +1,13 @@
+
+<div class="container py-5">
+    <h1 class="display-4 text-center my-4">{{ page.about.title }}</h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <h2 class="my-3">{{ page.about.subtitle }}</h2>
+            <p>{{ page.about.article }}</p>
+        </div>
+        <div class="col-lg-6">
+            {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid rounded-circle" width="400" --alt {{ alt.keyword | sample }} %}
+        </div>
+    </div>
+</div>

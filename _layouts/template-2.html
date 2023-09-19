@@ -1,0 +1,131 @@
+{% include _head.html %}
+
+<body id="top-header">
+    {{ cl }}
+    <div class="main-navigation fixed-top site-header" id="mainmenu-area">
+        {% include {{page.layout}}/_nav_{{page.layout}}.html %} 
+    </div>
+    <section class="banner-main py-7" id="banner">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-8 col-lg-7">
+                    <div class="main-banner">
+                        <h1 class="mb-3 mt-2"> {{ page.intro.title }} </h1>
+
+                        <div class="mb-4">
+                            <h2>{{ page.intro.h2 }}</h2>
+                            <h3>{{ page.intro.h3 }}</h3>
+                        </div>
+                        <p class="mb-4">{{ page.intro.article }}</p><a class="btn btn-main mt-2" role="button" href="{{ site.data.links.link | sample }}" target="_blank"> Go to MEGA <i class="ti-angle-right ml-3"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="banner-img pt-5"><img class="img-fluid w-100" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}"></div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="pt-4 section-bottom" id="service">
+        <div class="container">
+            <div class="row align-items-center">
+                <h3 class="mb-3 mt-2"> {{ page.future.title }} </h3>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="service-block mb-4 mb-lg-0"><i class="text-danger ti-microphone"></i>
+                        <h4 class="mb-3 mt-4">{{ page.future.item_1.title }}</h4>
+                        <p class="mb-0">{{ page.future.item_1.article }}</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="service-block mb-4 mb-lg-0"><i class="text-success ti-rocket"></i>
+                        <h4 class="mb-3 mt-4">{{ page.future.item_2.title }}</h4>
+                        <p class="mb-0">{{ page.future.item_2.article }}</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="service-block mb-4 mb-lg-0"><i class="text-warning ti-email"></i>
+                        <h4 class="mb-3 mt-4">{{ page.future.item_3.title }}</h4>
+                        <p class="mb-0">{{ page.future.item_2.article }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-bottom testimonial" id="review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6">
+                    <div class="text-center section-heading">
+                        <h3 class="mb-3 text-lg">{{ page.main.title }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-12 testimonial-wrap">
+                    <div class="test-item">
+                        <div class="testimonial-item-content">
+                            <div class="test-author-thumb mb-4"><img class="img-fluid" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}">
+                                <div class="test-author-info mt-4">
+                                    <div class="rating"><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a></div>
+                                    <h4 class="mb-0 mt-2">{{ page.main.item_1.title }}</h4>
+                                    
+                                </div>
+                            </div>
+                            <p class="mb-0">{{ page.main.item_1.article }}</p>
+                        </div>
+                    </div>
+                    <div class="test-item">
+                        <div class="testimonial-item-content">
+                            <div class="test-author-thumb mb-4"><img class="img-fluid" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}">
+                                <div class="test-author-info mt-4">
+                                    <div class="rating"><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a></div>
+                                    <h4 class="mb-0 mt-2">{{ page.main.item_2.title }}</h4>                                    
+                                </div>
+                            </div>
+                            <p class="mb-0">{{ page.main.item_2.article }}</p>
+                        </div>
+                    </div>
+                    <div class="test-item">
+                        <div class="testimonial-item-content">
+                            <div class="test-author-thumb mb-4"><img class="img-fluid" src="{{ image_paths | sample }}" alt="Testimonial author">
+                                <div class="test-author-info mt-4">
+                                    <div class="rating"><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a><a href="#"><i class="ti-star"></i></a></div>
+                                    <h4 class="mb-0 mt-2">{{ page.main.item_3.title }}</h4>                                    
+                                </div>
+                            </div>
+                            <p class="mb-0">{{ page.main.item_3.article }}</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>{{ page.faq.title }}</h2>
+            </div>
+            <ul class="faq-list">
+                <li><h3><a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">{{ page.faq.item_1.q }} <i class="bx bx-down-arrow-alt icon-show"></i><i class="icon-close bx bx-x"></i></a></h3>
+                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                        <h4> {{ page.faq.item_1.a }}</h4>
+                    </div>
+                </li>
+                <li><h3><a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">{{ page.faq.item_2.q }} <i class="bx bx-down-arrow-alt icon-show"></i><i class="icon-close bx bx-x"></i></a></h3>
+                    <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                        <h4> {{ page.faq.item_2.a }}</h4>
+                    </div>
+                </li>
+                <li><h3><a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">{{ page.faq.item_3.q }}<i class="bx bx-down-arrow-alt icon-show"></i><i class="icon-close bx bx-x"></i></a></h3>
+                    <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                        <h4> {{ page.faq.item_3.a }}</h4>
+                    </div>
+                </li>                     
+            </ul>
+        </div>
+    </section>
+    
+    {% include _footer.html %}
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jquery/jquery.min.js"></script>
+</html>

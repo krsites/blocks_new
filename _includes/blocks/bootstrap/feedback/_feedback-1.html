@@ -1,0 +1,85 @@
+  <section class="position-relative py-28 bg-white overflow-hidden">
+    <h2 class="text-center mb-5 pb-5">{{ page.feedback.title }}</h2>    
+    <div class="position-absolute top-0 start-0 h-100 w-100" style="background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);"></div>
+        <div class="position-relative container" style="z-index:1;">
+          <div class="row align-items-center g-16">
+            <div class="col-auto">              
+            </div>
+            <div class="col">
+              <div class="row g-16">
+                <div class="col-12 col-md-6">
+                  <div class="row align-items-center g-6">
+                    <div class="col-auto">
+                      {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="iimg-fluid rounded-circle mb-3 avatar-one" width="100" height="100" --alt {{ alt.keyword | sample }} %}
+                    </div>
+                    <div class="col">
+                      <h3 class="mb-2 fs-8 fw-semibold text-light-dark">{{ page.feedback.item_1.nickname }}</h3>                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="position-relative mw-md-md ms-md-auto">
+                    <h2 class="position-relative mb-0 font-heading fs-8 fw-semibold text-light-dark" style="z-index: 1; letter-spacing: -1px;">{{ page.feedback.item_1.text }}</h2>
+                    <img class="position-absolute top-0 start-0 mt-n6 ms-n7" src="" alt="">
+                    <img class="position-absolute bottom-0 end-0 mb-n6 me-n7" src="" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mb-10 pb-10 fs-10 text-secondary border-bottom border-light"></p>
+          <div class="position-relative container" style="z-index:1;">
+            <div class="row align-items-center g-16">
+              <div class="col-auto">              
+              </div>
+              <div class="col">
+                <div class="row g-16">
+                  <div class="col-12 col-md-6">
+                    <div class="row align-items-center g-6">
+                      <div class="col-auto">
+                        {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="iimg-fluid rounded-circle mb-3 avatar-one" width="100" height="100" --alt {{ alt.keyword | sample }} %}
+                      </div>
+                      <div class="col">
+                        <h3 class="mb-2 fs-8 fw-semibold text-light-dark">{{ page.feedback.item_2.nickname }}</h3>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="position-relative mw-md-md ms-md-auto">
+                      <h2 class="position-relative mb-0 font-heading fs-8 fw-semibold text-light-dark" style="z-index: 1; letter-spacing: -1px;">{{ page.feedback.item_2.text }}</h2>
+                      <img class="position-absolute top-0 start-0 mt-n6 ms-n7" src="" alt="">
+                      <img class="position-absolute bottom-0 end-0 mb-n6 me-n7" src="" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="mb-10 pb-10 fs-10 text-secondary border-bottom border-light"></p>
+            <div class="position-relative container" style="z-index:1;">
+              <div class="row align-items-center g-16">
+                <div class="col-auto">              
+                </div>
+                <div class="col">
+                  <div class="row g-16">
+                    <div class="col-12 col-md-6">
+                      <div class="row align-items-center g-6">
+                        <div class="col-auto">
+                          {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="iimg-fluid rounded-circle mb-3 avatar-one" width="100" height="100" --alt {{ alt.keyword | sample }} %}
+                        </div>
+                        <div class="col">
+                          <h3 class="mb-2 fs-8 fw-semibold text-light-dark">{{ page.feedback.item_3.nickname }}</h3>                      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="position-relative mw-md-md ms-md-auto">
+                        <h2 class="position-relative mb-0 font-heading fs-8 fw-semibold text-light-dark" style="z-index: 1; letter-spacing: -1px;">{{ page.feedback.item_3.text }}</h2>
+                        <img class="position-absolute top-0 start-0 mt-n6 ms-n7" src="" alt="">
+                        <img class="position-absolute bottom-0 end-0 mb-n6 me-n7" src="" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>

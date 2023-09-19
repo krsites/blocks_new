@@ -1,0 +1,15 @@
+<div class="two-columns-media-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-8 col-lg-8">
+                <h3 style="font-weight: bold;color: var(--bs-indigo);">{{ page.about.title }}</h3>
+                <h4>{{ page.about.subtitle }}</h4>
+                <p>{{ page.about.article }}</p>
+                <p> </p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">                
+                {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 6:2 --img class="img-fluid" loading="lazy" --alt {{ alt.keyword | sample }} %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{% include {{page.layout}}/_head.html %}
+
+<body>
+    <!-- Start: Navbar -->
+    {% include {{page.layout}}/_nav.html %}
+    <!-- End: Navbar -->
+
+    <!-- Start: Responsive left-aligned hero with image -->
+    {% include {{page.layout}}/_hero.html %}
+    <!-- End: Responsive left-aligned hero with image -->
+
+    <!-- Start: Hero Features (Material Design Animation) -->
+    {% include {{page.layout}}/_future.html %}
+    <!-- End: Hero Features (Material Design Animation) -->
+
+    <!-- Start: Ultimate Masonry Testimonials -->
+    {% include {{page.layout}}/_feedback.html %}
+    <!-- End: Ultimate Masonry Testimonials -->
+
+    <!-- Start: Faq by pomdre -->
+    {% include {{page.layout}}/_faq.html %}
+    <!-- End: Faq by pomdre -->
+
+    <!-- Start: Two columns media right -->
+    {% include {{page.layout}}/_about.html %}
+    <!-- End: Two columns media right -->
+
+    <!-- main text block start -->
+    {% include {{page.layout}}/_main.html %}
+    <!-- main text block end -->
+
+    <!-- Start: Footer Clean -->
+    {% include {{page.layout}}/_footer.html %}
+    <!-- End: Footer Clean -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+    <script src="assets/{{page.layout}}/js/script.min.js"></script>
+</body>
+
+</html>

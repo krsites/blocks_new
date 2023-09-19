@@ -1,0 +1,28 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light  navbar-four">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{{ site.data.links.link | sample }}" title="{{ alt.keyword | sample }}">{{ alt.keyword | sample }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.data.links.link | sample }}" title="{{ alt.keyword | sample }}">{{ alt.keyword | sample }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.data.links.link | sample }}" title="{{ alt.keyword | sample }}">{{ alt.keyword | sample }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.data.links.link | sample }}" title="{{ alt.keyword | sample }}">{{ alt.keyword | sample }}</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="#">
+          {% picture jpt-webp /assets/blocks/images/logo/{{ page.shop }}/logo-{{ site.data.layout.logo }}.webp --img class="logo-one" height="80" --alt {{ alt.keyword | sample }} %}
+        </a>
+      </div>
+    </nav>
+  </header>

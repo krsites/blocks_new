@@ -1,0 +1,36 @@
+  <section class="bg-white pb-20 overflow-hidden">
+    <div class="position-relative pb-16 pt-20 bg-white overflow-hidden" style="background-image: url('flex-assets/elements/pattern-light.png')">
+      <div class="position-absolute top-0 start-0 h-100 w-100" style="background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);"></div>
+      <div class="position-relative container" style="z-index:1;">
+        <div class="mb-10 text-center mw-md-2xl mx-auto">
+          <div class="mb-6">
+            
+          </div>
+          
+          <h2 class="font-heading mb-4 fs-5" style="letter-spacing: -1px;">{{ page.main.title }}</h2>
+          <h3 class="mb-6 fw-medium text-secondary"></h3>
+        </div>
+        
+      </div>
+    </div>
+    <div class="mb-10 d-flex justify-content-center">
+      {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="" width="800" height="auto" --alt {{ alt.keyword | sample }} %}
+    </div>
+    <div class="container">
+      <div class="mw-md-2xl mx-auto">
+        
+        <h3 class="mb-4 font-heading fs-7 text-light-dark fw-semibold"{{ page.main.part_1.subtitle }}</h3>
+        <p class="mb-6 fs-10 text-secondary">{{ page.main.part_1.article }}</p>
+        
+        {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="mb-4 img-fluid w-100" width="" height="" --alt {{ alt.keyword | sample }} %}
+        <!-- <img class="mb-4 img-fluid w-100" src="flex-assets/images/blog-content/content-middle.png" alt=""> -->
+        
+        <h3 class="mb-4 font-heading fs-7 text-light-dark fw-semibold">{{ page.main.part_2.subtitle }}</h3>
+        <p class="mb-16 fs-10 text-secondary">{{ page.main.part_2.article }}</p>
+        
+        <h3 class="mb-4 font-heading fs-7 text-light-dark fw-semibold">{{ page.main.part_3.subtitle }}</h3>
+        <p class="mb-16 fs-10 text-secondary">{{ page.main.part_3.article }}</p>
+        
+      </div>
+    </div>
+  </section>

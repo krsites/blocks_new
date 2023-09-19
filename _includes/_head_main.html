@@ -1,0 +1,114 @@
+{% if site.data.config.lang == "en" %}
+{% assign alt = site.data.keywords_en %}
+{% elsif site.data.config.lang == "ru" %}
+{% assign alt = site.data.keywords_ru %}
+{% endif %}
+
+{% assign image_files = site.static_files | where: "image", true %}
+{% assign image_paths = image_files | map: "path" %}
+{% assign image = image_paths | sample %}
+
+{% if site.data.config.cl == true %}
+{% assign cl = site.data.config.cl_data %}
+{% endif %}
+
+
+
+
+<!DOCTYPE html>
+<html lang="{{ site.data.config.lang }}">
+    <head>
+
+{{/*  Yandex.Metrika counter  */}}
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym({{ site.data.config.ymid }}, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+
+    
+{{/*  Yandex.Metrika counter  */}}
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i">
+<link rel="stylesheet" href="assets/css/boxicons.css">
+<link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+<link rel="stylesheet" href="assets/css/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/vendor/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="assets/css/css/style.css">
+<link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>{{ site.data.config.title }}</title>
+        <meta name="keywords" content="{{ site.data.config.keywords }}" />
+        <link rel="stylesheet" href="{{ site.data.config.main_css }}nicepage.css" media="screen">
+        <link rel="stylesheet" href="{{ site.data.config.main_css }}main.css" media="screen">
+        <script class="u-script" type="text/javascript" src="{{ site.data.config.main_js }}jquery.js" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ site.data.config.main_js }}nicepage.js" defer=""></script>
+        <meta name="description" content="{{ site.data.config.description }}">
+        <meta name="copyright" lang="{{ site.data.config.lang }}" content="MEGA DARKNET" />
+        <link rel="canonical" href="{{ site.data.config.url }}" />
+        <link type="image/x-icon" href="{{ site.data.config.favicon }}" rel="shortcut icon">
+        <link type="Image/x-icon" href="{{ site.data.config.favicon }}" rel="icon">
+        <meta property="og:locale" content="{{ site.data.config.lang }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{{ site.data.config.title }}" />
+        <meta property="og:url" content="{{ site.data.config.url }}" />
+        <meta property="og:site_name" content="{{ site.data.config.title }}" />
+        <meta property="website:modified_time" content="{{ 'now' | date: '%Y-%m-%dT%H:%M:%S%z' }}" />
+        <meta property="og:image" content="{{ site.data.config.logo }}" />
+        <meta property="og:image:width" content="754" />
+        <meta property="og:image:height" content="686" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:label1" content="Est. reading time" />
+        <meta name="twitter:data1" content="5 minutes" />
+
+
+        <script type="application/ld+json" id="ld-json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "name": "{{ site.data.config.name }}",
+                        "url": "{{ site.data.config.url }}",
+                        "logo": "{{ site.data.config.logo }}"
+                    },
+                    {
+                        "@type": "Article",
+                        "headline": "{{ site.data.config.title }}",
+                        "image": "{{ site.data.config.logo }}",
+                        "description": "{{ site.data.config.description }}",
+                        "author": "{{ site.data.config.name }}",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "{{ site.data.config.name }}",
+                            "url": "{{ site.data.config.url }}",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "{{ site.data.config.logo }}"
+                            }
+                        },
+                        "datePublished": "{{ site.data.config.date_published | date: '%Y-%m-%d' }}",
+                        "dateModified": "{{ 'now' | date: '%Y-%m-%d' }}",
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "{{ site.data.config.url }}"
+                        }
+                    }
+                ]
+            }
+            </script>
+            
+    
+    </head> 

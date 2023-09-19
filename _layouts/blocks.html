@@ -1,0 +1,40 @@
+<!-- head section start -->
+{% include _head_{{ page.layout }}_{{ page.shop }}.html %}
+<!-- head section end -->
+
+<!-- nav section start -->
+{% include {{ page.layout }}/{{ site.data.layout.framework }}/nav/_nav-{{ site.data.layout.nav }}.html %}
+<!-- nav section end -->
+
+<!-- hero section start -->
+{% include {{ page.layout }}/{{ site.data.layout.framework }}/hero/_hero-{{ site.data.layout.hero }}.html %}
+<!-- hero section end -->
+
+<!-- features section start -->
+{% include {{ page.layout }}/{{ site.data.layout.framework }}/featured/_featured-{{ site.data.layout.featured }}.html %}
+<!--  features  section end -->
+
+<!-- about section start -->
+{% include {{ page.layout }}/{{ site.data.layout.framework }}/about/_about-{{ site.data.layout.about }}.html %}
+<!--  about  section end -->
+
+<!-- feedback section start -->
+{% include {{ page.layout }}/{{ site.data.layout.framework }}/faq/_faq-{{ site.data.layout.faq }}.html %}
+<!--  feedback section end -->
+
+<!-- feedback section start -->
+{% include {{ page.layout }}/{{ site.data.layout.framework }}/feedback/_feedback-{{ site.data.layout.feedback }}.html %}
+<!--  feedback section end -->
+
+<!-- main section start -->
+{% include {{ page.layout }}/{{ site.data.layout.framework }}/main/_main-{{ site.data.layout.main }}.html %}
+<!--  main section end -->
+
+<!-- footer section start -->
+{% include {{ page.layout }}/{{ site.data.layout.framework }}/footer/_footer-{{ site.data.layout.footer }}.html %}
+<!--  footer section end -->
+
+  <!-- Подключение скриптов Bootstrap 5.3 -->
+  <script src="/assets/js/v{{site.data.config.bootstrap}}/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

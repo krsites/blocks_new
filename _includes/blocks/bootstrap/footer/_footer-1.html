@@ -1,0 +1,23 @@
+<footer class="position-relative pt-20 bg-white overflow-hidden">
+    <div class="position-absolute top-0 start-0 h-100 w-100" style="background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);"></div>
+    <div class="position-relative container" style="z-index:1;">
+      <div class="d-flex justify-content-center mb-2">
+        <a href="#">
+          {% picture jpt-webp /assets/blocks/images/logo/{{ page.shop }}/logo-{{ site.data.layout.logo }}.webp --img class="logo-one" height="80" --alt {{ alt.keyword | sample }} %}
+        </a>
+      </div>
+      <ul class="nav justify-content-center mb-5">
+        <li class="nav-item"><a class="nav-link p-6 fs-9 link-secondary" href="#">Product</a></li>
+        <li class="nav-item"><a class="nav-link p-6 fs-9 link-secondary" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link p-6 fs-9 link-secondary" href="#">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link p-6 fs-9 link-secondary" href="#">Resources</a></li>
+        <li class="nav-item">
+        <li class="nav-item"><a class="nav-link p-6 fs-9 link-secondary" href="#">Help</a></li>
+        <li class="nav-item"><a class="nav-link p-6 fs-9 link-secondary" href="#">Privacy</a></li>
+      </ul>
+    </div>
+    <div class="position-relative border-bottom border-light" style="z-index: 1;"></div>
+    <div class="position-relative container" style="z-index: 1;">
+      <p class="mb-0 pt-10 pb-20 fs-9 fw-medium text-center text-secondary-light">© 2023 {{ alt.keyword | sample }}. All rights reserved.</p>
+    </div>
+  </footer>

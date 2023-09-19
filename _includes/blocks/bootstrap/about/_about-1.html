@@ -1,0 +1,16 @@
+  <section class="position-relative py-20 bg-white overflow-hidden" style="background-image: url('flex-assets/elements/pattern-light.png')">
+    <div class="position-absolute top-0 start-0 h-100 w-100" style="background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);"></div>
+    <div class="position-relative container" style="z-index:1;">
+      <div class="mb-12 text-center mw-md-2xl mx-auto">
+        <h1 class="font-heading mb-4 fs-5" style="letter-spacing: -1px;">{{ page.about.title }}</h1>
+        <h2 class="mb-6 fw-medium text-secondary">{{ page.about.subtitle }}</h2>
+    </div>
+      <div class="mw-md-2xl mx-auto">
+        <p class="pb-10 mb-8 fs-9 text-secondary fw-medium border-bottom border-light">{{ page.about.article }}</p>
+        {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="pic-two img-fluid d-block mx-lg-auto p-5" width="400" --alt {{ alt.keyword | sample }} %}
+
+        <p class="mb-10 pb-10 fs-10 text-secondary border-bottom border-light">
+        </p>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,20 @@
+<footer class="bg-light py-3 footer-one">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          {% picture jpt-webp /assets/blocks/images/logo/{{ page.shop }}/logo-{{ site.data.layout.logo }}.webp --img class="logo-one" height="80" --alt {{ alt.keyword | sample }} %}
+        </div>
+        <div class="col-md-3">
+          <p>All right reserved &copy; 2023 {{ alt.keyword | sample }}</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-md-end">
+             <li class=""><a href="#">Cookie Policy</a></li>
+            <li class=""><a href="#">Privacy Policy</a></li>
+            <!--<li class=""><a href="#">Intellectual Property Notice</a></li>
+            <li class=""><a href="#">Terms and Conditions</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>

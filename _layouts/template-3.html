@@ -1,0 +1,135 @@
+{% include _head.html %}
+
+<body>
+    {{ cl }}
+    <header class="fixed-top header">
+        <div class="bg-white top-header py-2">
+{% include {{page.layout}}/_nav_{{page.layout}}.html %} 
+        </div>
+    </header>
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                    <h1 class="section-title">{{ page.main.title }}</h1>
+                    <h2>{{ page.intro.h2 }}</h2>
+                    <h3 class="section-title">{{ page.main.item_1.title }}</h3>
+                    <p>{{ page.main.item_1.article }}</p>
+                    <h3 class="section-title">{{ page.main.item_2.title }}</h3>
+                    <p>{{ page.main.item_1.article }}</p>
+                    <h3 class="section-title">{{ page.main.item_3.title }}</h3>
+                    <p>{{ page.main.item_3.article }}</p>
+                    
+                    <a class="btn btn-outline-primary" role="button" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a>
+                </div>
+                <!-- <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0"><img class="img-fluid w-100" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}"></div -->
+                <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+                    {% picture jpt-webp {{ image_paths | sample }} 1:2 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid w-100" --alt {{ alt.keyword | sample }} %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center section-title">
+                        <h2 class="text-nowrap mb-0 mr-3">{{ page.future.title }}</h2>
+                        <div class="border-primary d-none d-sm-block border-top w-100"></div><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-4 mb-5">
+                    <div class="card border-primary p-0 rounded-0 hover-shadow">
+                        {% picture jpt-webp {{ image_paths | sample }} 1:1 center --img class="card-img-top w-100 d-block card-img-top rounded-0" --alt {{ alt.keyword | sample }} %}
+                        <!-- <img class="card-img-top w-100 d-block card-img-top rounded-0" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}"> -->
+                        <div class="card-body">
+                            <ul class="list-inline mb-2">
+                                <li class="list-inline-item list-inline-item"></li>
+                            </ul><h3 class="card-title">{{ page.future.item_1.title }}</h3></a>
+                            <p class="card-text mb-4">{{ page.future.item_1.article }}</p><a class="btn btn-primary btn-sm" role="button" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-5">
+                    <div class="card border-primary p-0 rounded-0 hover-shadow">
+                        {% picture jpt-webp {{ image_paths | sample }} 1:1 center --img class="card-img-top w-100 d-block card-img-top rounded-0" --alt {{ alt.keyword | sample }} %}
+                        <!-- <img class="card-img-top w-100 d-block card-img-top rounded-0" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}"> -->
+                        <div class="card-body">
+                            <ul class="list-inline mb-2">
+                                <li class="list-inline-item list-inline-item"></li>
+                            </ul><h3 class="card-title">{{ page.future.item_2.title }}</h3></a>
+                            <p class="card-text mb-4"> {{ page.future.item_2.article }}</p><a class="btn btn-primary btn-sm" role="button" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-5">
+                    <div class="card border-primary p-0 rounded-0 hover-shadow">
+                        {% picture jpt-webp {{ image_paths | sample }} 1:1 center --img class="card-img-top w-100 d-block card-img-top rounded-0" --alt {{ alt.keyword | sample }} %}
+                        <!-- <img class="card-img-top w-100 d-block card-img-top rounded-0" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}"> -->
+                        <div class="card-body">
+                            <ul class="list-inline mb-2">
+                                <li class="list-inline-item list-inline-item"></li>
+                            </ul><h3 class="card-title">{{ page.future.item_3.title }}</h3></a>
+                            <p class="card-text mb-4"> {{ page.future.item_3.article }}</p><a class="btn btn-primary btn-sm" role="button" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center"><a class="btn btn-outline-primary btn-sm d-inline-block d-sm-none" role="button" href="#">sell all</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-cover" data-background="assets/img/backgrounds/success-story.jpg" style="padding: 60px 0;">
+        <div class="container py-4 py-xl-5">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col-xl-12 d-flex flex-column justify-content-center p-4">
+                    <h3 class="bg-white">{{ page.faq.title }}</h3>
+                    <div class="p-3 bg-white text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        
+                        <div>
+                            <p style="text-align: left;font-weight: bold;">{{ page.faq.item_1.q }}</p>
+                            <p>{{ page.faq.item_1.a }}</p>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-white text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        <div>
+                            <p style="text-align: left;font-weight: bold;">{{ page.faq.item_2.q }}</p>
+                            <p>{{ page.faq.item_2.a }}</p>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-white text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                        <div>
+                            <p style="text-align: left;font-weight: bold;">{{ page.faq.item_3.q }}</p>
+                            <p>{{ page.faq.item_3.a }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">                
+                <div class="col-sm-4 col-lg-6 position-relative success-video">
+                    {% picture jpt-webp {{ image_paths | sample }} 1:1 center --img class="card-img-top w-100 d-block card-img-top rounded-0" --alt {{ alt.keyword | sample }} %}                                   
+                    <!-- <img width="419" height="419" src="{{ image_paths | sample }}" alt="{{ alt.keyword | sample }}"> -->
+                </div> 
+                <div class="col-sm-8 col-lg-6">
+                    <div class="bg-white p-5">
+                        <h2 class="section-title">{{ page.intro.title }}</h2>
+                        <p>{{ page.intro.article }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include _footer.html %}
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jQuery/jquery.min.js"></script>
+    <script src="assets/js/js/script.js"></script>
+</body>
+</html>

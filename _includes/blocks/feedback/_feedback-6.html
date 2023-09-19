@@ -1,0 +1,35 @@
+<section class="bg-light pb-5 pt-5 text-center text-secondary" data-pg-collapsed> 
+    <div class="container pb-3 position-relative pt-3"> 
+        <div class="row"> 
+            <div class="col-lg-8 ms-auto me-auto"> 
+                <div id="carousel5" class="carousel slide" data-bs-ride="carousel"> 
+                    <div class="carousel-inner"> 
+                        <div class="carousel-item active">
+{% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid mb-3 rounded-circle" width="200" height="200" --alt {{ alt.keyword | sample }} %}
+                            <p class="fw-light h5 mb-4">{{ page.feedback.item_1.text }}</p>
+                            <h3 class="fw-bold h4 mb-1 text-primary">{{ page.feedback.item_1.nikname }}</h3>
+                            
+                        </div>
+                        <div class="carousel-item"> 
+{% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid mb-3 rounded-circle" width="200" height="200" --alt {{ alt.keyword | sample }} %}
+                            <p class="fw-light h5 mb-4">{{ page.feedback.item_2.text }}</p>
+                            <h3 class="fw-bold h4 mb-1 text-primary">{{ page.feedback.item_2.nikname }}</h3>
+
+                        </div>
+                        <div class="carousel-item"> 
+{% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid mb-3 rounded-circle" width="200" height="200" --alt {{ alt.keyword | sample }} %}
+                            <p class="fw-light h5 mb-4">{{ page.feedback.item_3.text }}</p>
+                            <h3 class="fw-bold h4 mb-1 text-primary">{{ page.feedback.item_3.nikname }}</h3>
+
+                        </div>                         
+                    </div>
+                    <ol class="carousel-indicators position-relative"> 
+                        <li data-bs-target="#carousel5" data-bs-slide-to="0" class="active bg-primary"></li>                         
+                        <li data-bs-target="#carousel5" data-bs-slide-to="1" class="bg-primary"></li>                         
+                        <li data-bs-target="#carousel5" data-bs-slide-to="2" class="bg-primary"></li>                         
+                    </ol>                     
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</section>

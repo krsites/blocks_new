@@ -1,0 +1,62 @@
+<div class="container" id="testimonials">
+    <h2 style="text-align: center;font-weight: bold;color: var(--bs-indigo);">{{ page.feedback.title }}</h2>
+    <div class="row gx-md-4" data-masonry="{&quot;percentPosition&quot;: true }">
+        <div class="col-md-6 col-lg-4 col-xxl-4">
+            <!-- Start: Image Wrapper -->
+            
+            <div class="d-flex justify-content-center image-wrapper">{% picture jpt-webp {{ image_paths | sample }} 1:1 center --img class="bg-primary image" width="116" height="116" --alt {{ alt.keyword | sample }} %}</div><!-- End: Image Wrapper -->
+            <!-- Start: Content Wrapper -->
+            <div class="text-center content-wrapper">
+                <!-- Start: Content -->
+                <div class="content">
+                    <!-- Start: Rating -->
+                    <p class="text-center text-white bg-primary rating"><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span></p><!-- End: Rating -->
+                    <!-- Start: Testimonial -->
+                    <p class="text">{{ page.feedback.item_1.text }}</p><!-- End: Testimonial -->
+                    <!-- Start: Name -->
+                    <p class="signature">{{ page.feedback.item_1.nikname }}</p><!-- End: Name -->
+                    <!-- Start: Date -->
+                    <p class="date">Mega Darknet client</p><!-- End: Date -->
+                </div><!-- End: Content -->                
+            </div><!-- End: Content Wrapper -->
+        </div>
+        <div class="col-md-6 col-lg-4 col-xxl-4">
+            <!-- Start: Image Wrapper -->
+            
+            <div class="d-flex justify-content-center">{% picture jpt-webp {{ image_paths | sample }} 1:1 center --img class="bg-secondary image" width="116" height="116" --alt {{ alt.keyword | sample }} %}</div><!-- End: Image Wrapper -->
+            <!-- Start: Content Wrapper -->
+            <div class="text-center content-wrapper">
+                <!-- Start: Content -->
+                <div class="content">
+                    <!-- Start: Rating -->
+                    <p class="text-center text-white bg-secondary rating"><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span></p><!-- End: Rating -->
+                    <!-- Start: Testimonial -->
+                    <p class="text">{{ page.feedback.item_2.text }}</p><!-- End: Testimonial -->
+                    <!-- Start: Name -->
+                    <p class="signature">{{ page.feedback.item_2.nikname }}</p><!-- End: Name -->
+                    <!-- Start: Date -->
+                    <p class="date">Mega Darknet client</p><!-- End: Date -->
+                </div><!-- End: Content -->                
+            </div><!-- End: Content Wrapper -->
+        </div>
+        <div class="col-md-6 col-lg-4 col-xxl-4">
+            <!-- Start: Image Wrapper -->
+            
+            <div class="d-flex justify-content-center">{% picture jpt-webp {{ image_paths | sample }} 1:1 center --img class="bg-success image" width="116" height="116" --alt {{ alt.keyword | sample }} %}</div><!-- End: Image Wrapper -->
+            <!-- Start: Content Wrapper -->
+            <div class="text-center content-wrapper">
+                <!-- Start: Content -->
+                <div class="content">
+                    <!-- Start: Rating -->
+                    <p class="text-center text-white bg-success rating"><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span><span class="rating-wrapper"><i class="fa fa-star"></i></span></p><!-- End: Rating -->
+                    <!-- Start: Testimonial -->
+                    <p class="text">{{ page.feedback.item_3.text }}</p><!-- End: Testimonial -->
+                    <!-- Start: Name -->
+                    <p class="signature">{{ page.feedback.item_3.nikname }}</p><!-- End: Name -->
+                    <!-- Start: Date -->
+                    <p class="date">Mega Darknet client</p><!-- End: Date -->
+                </div><!-- End: Content -->                
+            </div><!-- End: Content Wrapper -->
+        </div>
+    </div>
+</div>

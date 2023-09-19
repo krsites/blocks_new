@@ -1,0 +1,79 @@
+<header>
+    <nav>
+      <div>
+        
+        <section class="overflow-hidden">
+          <nav class="navbar navbar-dark navbar-expand-lg bg-secondary-dark py-5 py-lg-1">
+            <div class="container-fluid">
+              <a class="navbar-brand me-16" href="#">
+                {% picture jpt-webp /assets/blocks/images/logo/{{ page.shop }}/logo-{{ site.data.layout.logo }}.webp --img class="img-fluid" width="80" height="80" --alt {{ alt.keyword | sample }} %}
+              </a>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item p-6"><a class="nav-link link-light-light p-0" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a></li>
+                  <li class="nav-item p-6"><a class="nav-link link-secondary-light p-0" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a></li>
+                  <li class="nav-item p-6"><a class="nav-link link-secondary-light p-0" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a></li>
+                  <li class="nav-item p-6"><a class="nav-link link-secondary-light p-0" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a></li>
+                </ul>
+              </div>
+              <div class="d-none d-lg-block">
+                <div class="input-group border bg-white overflow-hidden rounded shadow" style="max-width: 200px;">
+                  <div class="input-group-prepend bg-white">
+                    <span class="input-group-text p-0 ps-4 pe-2 h-100 bg-transparent border-0" id="basic-addon1">
+                      <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.0467 11.22L12.6667 9.80666C12.3698 9.52449 11.9954 9.33754 11.5915 9.26982C11.1876 9.20211 10.7726 9.25673 10.4 9.42666L9.80001 8.82666C10.5071 7.88194 10.8299 6.70444 10.7037 5.53122C10.5775 4.35799 10.0115 3.27614 9.11963 2.50346C8.2278 1.73077 7.07637 1.32463 5.89712 1.36678C4.71788 1.40893 3.59838 1.89625 2.76399 2.73064C1.92961 3.56502 1.44229 4.68452 1.40014 5.86377C1.35799 7.04301 1.76413 8.19445 2.53681 9.08628C3.3095 9.97811 4.39134 10.5441 5.56457 10.6704C6.7378 10.7966 7.91529 10.4737 8.86001 9.76666L9.45335 10.36C9.26341 10.7331 9.19534 11.1564 9.25873 11.5702C9.32212 11.984 9.51377 12.3675 9.80668 12.6667L11.22 14.08C11.595 14.4545 12.1033 14.6649 12.6333 14.6649C13.1633 14.6649 13.6717 14.4545 14.0467 14.08C14.2372 13.8937 14.3885 13.6713 14.4919 13.4257C14.5952 13.1802 14.6484 12.9164 14.6484 12.65C14.6484 12.3836 14.5952 12.1198 14.4919 11.8743C14.3885 11.6287 14.2372 11.4063 14.0467 11.22V11.22ZM8.39335 8.39333C7.92684 8.85866 7.33288 9.17529 6.68651 9.30322C6.04013 9.43116 5.37034 9.36466 4.76175 9.11212C4.15315 8.85958 3.63305 8.43233 3.26716 7.88435C2.90126 7.33637 2.70597 6.69224 2.70597 6.03333C2.70597 5.37441 2.90126 4.73028 3.26716 4.1823C3.63305 3.63432 4.15315 3.20707 4.76175 2.95453C5.37034 2.70199 6.04013 2.63549 6.68651 2.76343C7.33288 2.89136 7.92684 3.20799 8.39335 3.67332C8.70377 3.98296 8.95005 4.3508 9.1181 4.75577C9.28614 5.16073 9.37264 5.59488 9.37264 6.03333C9.37264 6.47177 9.28614 6.90592 9.1181 7.31088C8.95005 7.71585 8.70377 8.08369 8.39335 8.39333V8.39333ZM13.1067 13.1067C13.0447 13.1691 12.971 13.2187 12.8897 13.2526C12.8085 13.2864 12.7214 13.3039 12.6333 13.3039C12.5453 13.3039 12.4582 13.2864 12.377 13.2526C12.2957 13.2187 12.222 13.1691 12.16 13.1067L10.7467 11.6933C10.6842 11.6314 10.6346 11.5576 10.6008 11.4764C10.5669 11.3951 10.5495 11.308 10.5495 11.22C10.5495 11.132 10.5669 11.0448 10.6008 10.9636C10.6346 10.8824 10.6842 10.8086 10.7467 10.7467C10.8087 10.6842 10.8824 10.6346 10.9636 10.6007C11.0449 10.5669 11.132 10.5495 11.22 10.5495C11.308 10.5495 11.3952 10.5669 11.4764 10.6007C11.5576 10.6346 11.6314 10.6842 11.6933 10.7467L13.1067 12.16C13.1692 12.222 13.2188 12.2957 13.2526 12.3769C13.2865 12.4582 13.3039 12.5453 13.3039 12.6333C13.3039 12.7213 13.2865 12.8085 13.2526 12.8897C13.2188 12.9709 13.1692 13.0447 13.1067 13.1067V13.1067Z" fill="#BBC3CF"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <input class="form-control fs-12 p-0 pe-4 fw-medium border-0 shadow" id="searchInput7-1" type="text" style="height: 36px;" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="d-lg-none">
+                <a class="btn navbar-burger p-0" href="#">
+                  <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="text-light-dark" width="32" height="32" rx="6" fill="currentColor"></rect>
+                    <path class="text-secondary-light" d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <div class="d-none navbar-menu position-fixed top-0 start-0 bottom-0 w-75 mw-xs" style="z-index: 9999;">
+            <div class="navbar-backdrop position-fixed top-0 start-0 end-0 bottom-0 bg-dark" style="opacity: 75%;"></div>
+            <nav class="position-relative h-100 w-100 d-flex flex-column justify-content-between p-6 bg-secondary-dark overflow-auto">
+              <div>
+                <div class="mb-4 d-flex align-items-center">
+                  <a class="me-auto h4 mb-0 text-decoration-none" href="#">
+                    {% picture jpt-webp /assets/blocks/images/logo/{{ page.shop }}/logo-{{ site.data.layout.logo }}.webp --img class="img-fluid" width="80" height="80" --alt {{ alt.keyword | sample }} %}
+                  </a>
+                  <a class="navbar-close text-secondary-light" href="#">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </a>
+                </div>
+                <div class="input-group border bg-white overflow-hidden rounded shadow">
+                  <div class="input-group-prepend bg-white">
+                    <span class="input-group-text p-0 ps-4 pe-2 h-100 bg-transparent border-0" id="basic-addon1">
+                      <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.0467 11.22L12.6667 9.80666C12.3698 9.52449 11.9954 9.33754 11.5915 9.26982C11.1876 9.20211 10.7726 9.25673 10.4 9.42666L9.80001 8.82666C10.5071 7.88194 10.8299 6.70444 10.7037 5.53122C10.5775 4.35799 10.0115 3.27614 9.11963 2.50346C8.2278 1.73077 7.07637 1.32463 5.89712 1.36678C4.71788 1.40893 3.59838 1.89625 2.76399 2.73064C1.92961 3.56502 1.44229 4.68452 1.40014 5.86377C1.35799 7.04301 1.76413 8.19445 2.53681 9.08628C3.3095 9.97811 4.39134 10.5441 5.56457 10.6704C6.7378 10.7966 7.91529 10.4737 8.86001 9.76666L9.45335 10.36C9.26341 10.7331 9.19534 11.1564 9.25873 11.5702C9.32212 11.984 9.51377 12.3675 9.80668 12.6667L11.22 14.08C11.595 14.4545 12.1033 14.6649 12.6333 14.6649C13.1633 14.6649 13.6717 14.4545 14.0467 14.08C14.2372 13.8937 14.3885 13.6713 14.4919 13.4257C14.5952 13.1802 14.6484 12.9164 14.6484 12.65C14.6484 12.3836 14.5952 12.1198 14.4919 11.8743C14.3885 11.6287 14.2372 11.4063 14.0467 11.22V11.22ZM8.39335 8.39333C7.92684 8.85866 7.33288 9.17529 6.68651 9.30322C6.04013 9.43116 5.37034 9.36466 4.76175 9.11212C4.15315 8.85958 3.63305 8.43233 3.26716 7.88435C2.90126 7.33637 2.70597 6.69224 2.70597 6.03333C2.70597 5.37441 2.90126 4.73028 3.26716 4.1823C3.63305 3.63432 4.15315 3.20707 4.76175 2.95453C5.37034 2.70199 6.04013 2.63549 6.68651 2.76343C7.33288 2.89136 7.92684 3.20799 8.39335 3.67332C8.70377 3.98296 8.95005 4.3508 9.1181 4.75577C9.28614 5.16073 9.37264 5.59488 9.37264 6.03333C9.37264 6.47177 9.28614 6.90592 9.1181 7.31088C8.95005 7.71585 8.70377 8.08369 8.39335 8.39333V8.39333ZM13.1067 13.1067C13.0447 13.1691 12.971 13.2187 12.8897 13.2526C12.8085 13.2864 12.7214 13.3039 12.6333 13.3039C12.5453 13.3039 12.4582 13.2864 12.377 13.2526C12.2957 13.2187 12.222 13.1691 12.16 13.1067L10.7467 11.6933C10.6842 11.6314 10.6346 11.5576 10.6008 11.4764C10.5669 11.3951 10.5495 11.308 10.5495 11.22C10.5495 11.132 10.5669 11.0448 10.6008 10.9636C10.6346 10.8824 10.6842 10.8086 10.7467 10.7467C10.8087 10.6842 10.8824 10.6346 10.9636 10.6007C11.0449 10.5669 11.132 10.5495 11.22 10.5495C11.308 10.5495 11.3952 10.5669 11.4764 10.6007C11.5576 10.6346 11.6314 10.6842 11.6933 10.7467L13.1067 12.16C13.1692 12.222 13.2188 12.2957 13.2526 12.3769C13.2865 12.4582 13.3039 12.5453 13.3039 12.6333C13.3039 12.7213 13.2865 12.8085 13.2526 12.8897C13.2188 12.9709 13.1692 13.0447 13.1067 13.1067V13.1067Z" fill="#BBC3CF"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <input class="form-control fs-12 p-0 pe-4 fw-medium border-0 shadow" id="searchInput7-2" type="text" style="height: 36px;" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="py-16 flex-grow-1 d-flex align-items-center">
+                <ul class="nav nav-pills flex-column w-100">
+                  <li class="nav-item"><a class="nav-link link-light-light bg-light-dark" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary-light" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary-light" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary-light" href="{{ site.data.links.link | sample }}">{{ alt.keyword | sample }}</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </nav>
+  </header>

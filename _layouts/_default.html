@@ -1,0 +1,31 @@
+{% if site.data.config.lang == "en" %}
+{% assign alt = site.data.keywords_en %}
+{% elsif site.data.config.lang == "ru" %}
+{% assign alt = site.data.keywords_ru %}
+{% endif %}
+{% include _head.html %}
+<body data-home-page="mega.html" data-home-page-title="{{ site.data.config.title }}" class="u-body u-xl-mode" data-lang="ru">
+  <section class="u-clearfix u-image u-section-1" id="carousel_e184" data-image-width="5000" data-image-height="4332">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-align-center u-text u-text-body-alt-color u-text-1">{{ page.main_title }}</h1>
+{% include _mega_main_block.html %}
+      <h2 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-4">Вас могут заинтересовать </h2>
+      <div class="u-expanded-width u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-black u-border-2 u-border-white u-container-style u-custom-item u-list-item u-radius-20 u-repeater-item u-shape-round" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+{% include _mega_small_block.html %}
+          </div>
+{% include _bs_small_block.html %}
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script defer>
+  var ldJson = document.getElementById('ld-json');
+  var dateModified = new Date().toISOString().slice(0,10);
+  ldJson.innerHTML = ldJson.innerHTML.replace(/"dateModified":\s*""/, '"dateModified": "' + dateModified + '"');
+</script>    
+</html>
+
+</html>

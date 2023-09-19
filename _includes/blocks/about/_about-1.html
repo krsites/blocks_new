@@ -1,0 +1,9 @@
+<section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">{{ page.about.title }}</h2>
+      {% picture jpt-webp {{ image_paths | sample }} jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid d-block mx-lg-auto mb-15" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+
+      <h3 class="text-center mt-5">{{ page.about.subtitle }}</h3>
+      <p class="aboutus-text-one">{{ page.about.article }}</p>
+      </div>
+  </section>

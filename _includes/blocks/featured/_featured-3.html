@@ -1,0 +1,46 @@
+<section class="py-5  hints-three">
+    <div class="container">
+      <h2 class="text-center mb-5 bottom-three">{{ page.future.title }}</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body ">
+              <h3 class="card-title">{{ page.future.item_1.title }}</h3>
+              {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid pb-5" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+              <h4 class="card-title text-center">{{ page.future.item_1.subtitle }}</h4>
+              <p class="card-text">{{ page.future.item_1.article }}</p>
+              <div class="d-grid gap-2">
+                <a href="/" class="btn btn-info btn-lg">{{ alt.keyword | sample }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body ">
+              <h3 class="card-title">{{ page.future.item_2.title }}</h3>
+              {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid pb-5" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+              <h4 class="card-title text-center">{{ page.future.item_2.subtitle }}</h4>
+              <p class="card-text">{{ page.future.item_2.article }}</p>
+              <div class="d-grid gap-2">
+                <a href="/" class="btn btn-info btn-lg">{{ alt.keyword | sample }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body ">
+              <h3 class="card-title">{{ page.future.item_3.title }}</h3>
+              {% picture jpt-webp {{ image_paths | sample }} 1:1 jpt-mobile: {{ image_paths | sample }} 1:1 --img class="img-fluid pb-5" width="400" height="400" --alt {{ alt.keyword | sample }} %}
+              <h4 class="card-title text-center">{{ page.future.item_3.subtitle }}</h4>
+              <p class="card-text">{{ page.future.item_3.article }}</p>
+              <div class="d-grid gap-2">
+                <a href="/" class="btn btn-info btn-lg">{{ alt.keyword | sample }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

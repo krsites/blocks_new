@@ -1,0 +1,386 @@
+/* one */
+
+img {
+    max-width: 100%;
+}
+
+.font-one {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-one {
+    max-width: 100px;
+}
+
+.avatar-one {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-one .nav-link.active {
+    border-bottom: 2px solid purple;
+}
+
+.accordion-one .accordion-button:not(.collapsed) {
+    background-color: purple !important;
+    color: white !important;
+}
+
+.accordion-one .accordion-body {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.aboutus-text-one {
+    margin-top: 2rem;
+}
+
+.footer-one {
+    background: purple !important;
+    color: white !important;
+}
+
+.footer-one a {
+    color: white !important;
+}
+
+/* two  */
+
+.font-two {
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-two {
+    background-color: #134707 !important;
+    padding-bottom: 2rem;
+}
+
+.navbar-two .navbar-toggler {
+    border-color: white;
+}
+
+.navbar-two .nav-link {
+    color: white !important;
+}
+
+.navbar-two .nav-link.active {
+    border-bottom: 2px dashed lightblue;
+}
+
+.navbar-two > .container {
+    flex-direction: column;
+}
+
+.logo-two {
+    max-height: 200px;
+}
+
+.hints-two h3 {
+    font-style: italic;
+    border-bottom: 2px dotted green;
+}
+
+.hints-two img {
+    border-radius: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.userhead-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.avatar-two {
+    max-width: 100px;
+}
+
+.faq-two > div {
+    margin-bottom: 2rem;
+}
+
+.pic-two {
+    border-radius: 2rem;
+    max-width: 400px;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.aboutus-text-two {
+    line-height: 2;
+}
+
+.footer-two {
+    margin-top: 2rem;
+    background-color: #134707 !important;
+    color: white !important;
+}
+
+.footer-two a {
+    color: lightblue;
+    text-decoration: none;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+/* three */
+
+.font-three {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+.font-three, .font-three .container {
+    background-color: #f2f2f2;
+}
+
+.logo-three {
+    max-width: 200px;
+}
+
+.navbar-three .nav-item {
+    text-transform: uppercase;
+}
+
+.navbar-three .nav-link.active {
+    color: red;
+/*    font-weight: bold;*/
+}
+
+
+@media (max-width: 992px) {
+    .navbar-three .navbar-collapse {
+        position: absolute;
+        margin-left: 6rem;
+    }
+}
+
+.bottom-three {
+    display: inline-block;
+    border-bottom: 2px dashed red;
+}
+
+.hints-three .card {
+    background: none;
+    border: 0;
+}
+
+.hints-three .card-text {
+    margin-top: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.reviews-three .card {
+    background: none;
+    border: 0;
+}
+
+.reviews-three .card-text {
+    margin-top: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.avatar-three {
+    width: 150px;
+    height: 150px;
+}
+
+.answer-three {
+    margin-top: 1.5rem;
+    background-color: white;
+    border: 1px dashed red;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pic-three {
+    padding: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    max-width: 400px;
+    float: right;
+}
+
+.footer-three .row {
+    width: 100%;
+}
+
+.footer-three .col-md-4 {
+    margin: auto;
+}
+
+.footer-three a {
+    text-decoration: none;
+    color: red;
+}
+
+
+/* four  */
+
+.font-four {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+.logo-four {
+    width: 200px;
+}
+
+.navbar-four > .container {
+    flex-direction: column;
+}
+
+.navbar-four .nav-link.active {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.shadow-four {
+    box-shadow: 0 1rem 3rem lightblue !important;
+}
+
+.hints-four .card {
+    border: none;
+}
+
+/*.hints-four img {
+    
+}*/
+
+.hints-four .card-text {
+    margin-top: 1.5rem;
+}
+
+.reviews-four .card {
+    border: none;
+}
+
+.avatar-four {
+    width: 300px;
+    height: 300px;
+}
+
+.faq-four > div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.faq-four  h2 {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.answer-four {
+    padding: 1rem;
+}
+
+.pic-four {
+    max-width: 500px;
+    float: right;
+    margin: 2rem;
+    margin-top: 0;
+}
+
+.footer-four {
+    margin-top: 10rem;
+}
+
+.footer-four .col-md-4 {
+    text-align: center;
+}
+
+.footer-four a {
+    text-decoration: none;
+    border-bottom: 2px dashed lightblue;
+}
+
+/* five  */
+
+.font-five {
+    background-color: #DCDFFF;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar-five .navbar-toggler {
+    margin-bottom: 1rem;
+}
+
+.navbar-five > .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-five .nav-link.active {
+    background-color: white;
+    border-radius: .5rem;
+    border: 1px dashed blue;
+}
+
+.logo-five {
+    max-width: 200px;
+}
+
+.back-five {
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.hints-five .card {
+    border: none;
+    background: none;
+}
+
+.reviews-five .card {
+    border: none;
+    background: none;
+}
+
+.avatar-five {
+    width: 100px;
+    border-radius: .5rem;
+}
+
+.userhead-five {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pic-five {
+    max-width: 300px;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.aboutus-text-five {
+    line-height: 2;
+}
+
+.under-five {
+    border-bottom: 3px dashed white;
+    font-size: 22px;
+    display: inline-block;
+}
+
+.footer-five {
+    border-radius: 1rem;
+    border: 2px dashed white;
+}
+
+.footer-five li {
+    margin-bottom: .5rem;
+}
+
+.footer-five a {
+/*    color: blue;*/
+    text-decoration: none;
+}

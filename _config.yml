@@ -1,0 +1,33 @@
+builder: jekyll
+port: 4001
+defaults:
+  - scope:
+      path: "assets/blocks/images/mega"
+    values:
+      mega: true
+  - scope:
+      path: "assets/blocks/images/bs"
+    values:
+      bs: true
+  - scope:
+      path: "assets/blocks/images/kraken"
+    values:
+      kraken: true
+
+url: "https://kraken-site-dark.net" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+data_dir: _data
+include:
+  - sitemap.xml
+  - robots.txt
+  - _header
+plugins:
+  - jekyll-redirect-from
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll_picture_tag
+  - jekyll-liquify
+picture:
+  source: "/"
+  ignore_missing_images: true
+  output: "assets/images/opt"

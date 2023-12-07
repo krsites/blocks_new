@@ -13,5 +13,5 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-responsive-image'
     gem 'jekyll_picture_tag', '~> 2.0'
-    gem 'jekyll-liquify'
+    gem 'jekyll-liquify', '0.0.2'
 end

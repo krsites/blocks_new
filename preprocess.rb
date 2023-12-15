@@ -15,6 +15,14 @@ def process_content(value, keywords1, keywords2)
   value
 end
 
+def write_keywords_to_file(directory, keywords)
+  File.open('result.txt', 'a') do |file|
+    keywords.each do |keyword|
+      file.puts "#{directory}:#{keyword}"
+    end
+  end
+end
+
 # Путь к вашему index.md
 index_path = './index.md'
 
@@ -42,3 +50,7 @@ processed_data = process_content(data, keywords1, keywords2)
 # Преобразуйте обработанные данные обратно в YAML и запишите в index.md
 new_content = processed_data.to_yaml + "---\n"
 File.write(index_path, new_content)
+
+# Записываем ключевые слова в файл result.txt
+current_directory = File.basename(Dir.getwd)
+write_keywords_to_file(current_directory, keywords1)

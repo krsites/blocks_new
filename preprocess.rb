@@ -5,8 +5,35 @@ require 'date'
 require 'liquid'
 require 'yaml'
 
+def get_base_token
+  url = URI("https://cloud.seatable.io/api/v2.1/dtable/app-access-token/")
+  http = Net::HTTP.new(url.host, url.port)
+  http.use_ssl = true
+
+  request = Net::HTTP::Get.new(url)
+  request["accept"] = 'application/json'
+  request["authorization"] = 'Bearer 58398824912ba0da434305a7c2b31ebd71eb41d7'
+
+  response = http.request(request)
+  if response.is_a?(Net::HTTPSuccess)
+    body = JSON.parse(response.body)
+    body['access_token'] # Извлекаем access_token из ответа
+  else
+    puts "Ошибка при получении base_token: #{response.code} #{response.message}"
+    nil
+  end
+end
+
 # Настройки
-base_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MDYwOTM1NDQsImR0YWJsZV91dWlkIjoiNTJlMjdiMjgtZmNhZS00M2ZhLTllNTktNjUxNmI0ZGIwOGM5IiwidXNlcm5hbWUiOiIiLCJwZXJtaXNzaW9uIjoicnciLCJhcHBfbmFtZSI6InN0In0.9u24w73J2PEngaed2kwrbtPWF-UWdoopEiSPTfcKV6s"  # Замените на ваш Base-Token
+base_token = get_base_token
+puts "Полученный base_token: #{base_token}"
+
+# Если base_token не получен, выводим сообщение и завершаем скрипт
+unless base_token
+  puts "Base token не получен, скрипт прерывается"
+  return
+end
+
 dtable_uuid = "52e27b28-fcae-43fa-9e59-6516b4db08c9"  # Замените на UUID вашей базы данных
 table_name = 'CF_Projects'
 url_data = URI("https://cloud.seatable.io/dtable-server/api/v1/dtables/#{dtable_uuid}/rows/?table_name=#{table_name}")

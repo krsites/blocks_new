@@ -94,6 +94,11 @@ keywords2 = keywords2_data['keyword']
 # Обработайте все поля в данных
 processed_data = process_content(data, keywords1, keywords2)
 
+# Создаем резервную копию файла index.md
+backup_path = "#{index_path}.backup_#{Time.now.strftime('%Y%m%d%H%M%S')}"
+File.write(backup_path, File.read(index_path))
+puts "Резервная копия создана: #{backup_path}"
+
 # Преобразуйте обработанные данные обратно в YAML и запишите в index.md
 new_content = processed_data.to_yaml + "---\n"
 File.write(index_path, new_content)
